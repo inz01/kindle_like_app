@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SuperReader" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Remove any native splash screen - use your Compose screen immediately -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+        <!-- Completely disable native splash screen for all API levels -->
+        <item name="android:windowDisablePreview">true</item>
+
+        <!-- Disable native splash screen for API 31+ -->
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@android:color/transparent</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="31">@null</item>
+        <item name="android:windowSplashScreenAnimationDuration" tools:targetApi="31">0</item>
+    </style>
+
+    <style name="Theme.SuperReader" parent="Base.Theme.SuperReader" />
+</resources>
